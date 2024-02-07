@@ -13,6 +13,13 @@ export default {
       fontFamily: {
         'Manrope': ['Manrope', 'sans-serif'],
       },
+      spacing: {
+        '200': '200px',
+        '280': '280px',
+        '285': '285px',
+        '327': '327px',
+        '730': '730px',
+      },
     },
   },
   plugins: [],
