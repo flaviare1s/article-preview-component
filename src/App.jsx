@@ -32,15 +32,16 @@ export function App() {
           <div>
             <img src={ avatar } alt="Michelle Appleton" />
           </div>
-          Michelle Appleton
-          28 Jun 2020
-          Share
+          <p>Michelle Appleton</p>
+          <p>28 Jun 2020</p>
+          <img src={ share } alt="" />
         </div>
         <div>
-          <img src={ share } alt="" />
+          <p>SHARE</p>
           <img src={ facebook } alt="" />
           <img src={ twitter } alt="" />
           <img src={ pinterest } alt="" />
+          <img src={ share } alt="" />
         </div>
       </div>
 
