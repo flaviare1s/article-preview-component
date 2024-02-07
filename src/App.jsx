@@ -43,12 +43,14 @@ export function App() {
               </div>
               <div><img className='bg-lightGrayishBlue rounded-full text-center p-2' src={ share } alt="Share Icon" /></div>
             </div>
-            <div className='hidden flex'>
-              <p>SHARE</p>
-              <img src={ facebook } alt="Facebook Icon" />
-              <img src={ twitter } alt="Twitter Icon" />
-              <img src={ pinterest } alt="Pinterest Icon" />
-              <img src={ share } alt="Share Icon" />
+            <div className='flex justify-between items-center p-8 bg-veryDarkGrayishBlue text-white'>
+              <div className='flex justify-start items-center gap-3'>
+                <p className='tracking-widest text-13 text-desaturatedDarkBlue'>SHARE</p>
+                <img src={ facebook } alt="Facebook Icon" />
+                <img src={ twitter } alt="Twitter Icon" />
+                <img src={ pinterest } alt="Pinterest Icon" />
+              </div>
+              <div><img className='bg-desaturatedDarkBlue text-white p-2 rounded-full' src={ share } alt="Share Icon" /></div>
             </div>
           </div>
         </div>
