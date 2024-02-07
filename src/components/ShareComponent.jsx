@@ -12,7 +12,7 @@ export const ShareComponent = ({ setShowShare, setShowAvatar }) => {
 
     
   return (
-    <div  onMouseLeave={handleMouseLeave} className='flex justify-between items-center py-6 px-8 bg-veryDarkGrayishBlue lg:justify-center lg:h-67 lg:w-248 lg:rounded-xl'>
+    <div  onMouseLeave={handleMouseLeave} className='flex justify-between items-center py-6 px-8 bg-veryDarkGrayishBlue sm:justify-center'>
         <div className='flex justify-start items-center gap-3'>
         <p className='tracking-widest text-13 text-desaturatedDarkBlue'>SHARE</p>
         <a href="#"><img src={ facebook } alt="Facebook Icon" /></a>
@@ -20,7 +20,7 @@ export const ShareComponent = ({ setShowShare, setShowAvatar }) => {
         <a href="#"><img src={ pinterest } alt="Pinterest Icon" /></a>
         </div>
         <div>
-            <button><img className='bg-desaturatedDarkBlue p-2 rounded-full lg:hidden' src={ shareWhite } alt="Share Icon" /></button>
+            <button><img className='bg-desaturatedDarkBlue p-2 rounded-full sm:hidden' src={ shareWhite } alt="Share Icon" /></button>
         </div>
     </div>
   )

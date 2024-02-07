@@ -5,7 +5,6 @@ import { AvatarComponent } from './components/AvatarComponent'
 import { ShareComponent } from './components/ShareComponent'
 import { useState } from 'react'
 
-
 export function App() {
   const [showShare, setShowShare] = useState(false)
   const [showAvatar, setShowAvatar] = useState(true)
