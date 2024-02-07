@@ -12,10 +12,10 @@ export function App() {
 
   return (
     <div className='bg-lightGrayishBlue font-Manrope min-h-screen flex flex-col items-center justify-center m-auto'>
-      <div className='h-full w-11/12 my-auto sm:w-730 sm:h-280 sm:grid sm:grid-cols-3 overflow-hidden'>
+      <div className='h-full w-11/12 my-auto sm:w-730 sm:h-280 sm:grid sm:grid-cols-3 overflow-hidden rounded-lg shadow-lg'>
         <div className='sm:col-span-1'>
-          <img className='sm:hidden max-w-full h-auto' src={ image } alt="Drawers picture" />
-          <img className='hidden sm:block sm:w-285 h-280' src={ imageDesktop } alt="Drawers picture" />
+          <img className='sm:hidden max-w-full h-auto rounded-t-lg' src={ image } alt="Drawers picture" />
+          <img className='hidden sm:block sm:w-285 sm:h-280 sm:rounded-l-lg' src={ imageDesktop } alt="Drawers picture" />
         </div>
         
         <div className='sm:col-span-2 sm:h-280'>
@@ -41,7 +41,7 @@ export function App() {
                   <p className='text-grayishBlue text-13 leading-5 tracking-normal'>28 Jun 2020</p>
                 </div>
               </div>
-              <div><img src={ share } alt="Share Icon" /></div>
+              <div><img className='bg-lightGrayishBlue rounded-full text-center p-3' src={ share } alt="Share Icon" /></div>
             </div>
             <div className='hidden flex'>
               <p>SHARE</p>
