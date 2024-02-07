@@ -3,9 +3,12 @@ import image from './assets/drawers.jpg'
 import imageDesktop from './assets/drawers-desktop.jpg'
 import { AvatarComponent } from './components/AvatarComponent'
 import { ShareComponent } from './components/ShareComponent'
+import { useState } from 'react'
 
 
 export function App() {
+  const [showShare, setShowShare] = useState(false)
+  const [showAvatar, setShowAvatar] = useState(true)
 
   return (
     <div className='bg-lightGrayishBlue font-Manrope min-h-screen flex flex-col items-center justify-center m-auto'>
@@ -21,15 +24,15 @@ export function App() {
               Shift the overall look and feel by adding these wonderful
               touches to furniture in your home
             </h1>
-            <p className='px-8 text-13 leading-5 text-desaturatedDarkBlue tracking-normal'>
+            <p className='px-8 pb-3 text-13 leading-5 text-desaturatedDarkBlue tracking-normal'>
               Ever been in a room and felt like something was missing? Perhaps
               it felt slightly bare and uninviting. I’ve got some simple tips
               to help you make any room feel complete.
             </p>
           </div>
           <div>
-            <AvatarComponent/>
-            <ShareComponent/>
+            <AvatarComponent setShowShare={setShowShare} showAvatar={showAvatar} setShowAvatar={setShowAvatar}/>
+            {showShare && <ShareComponent/>}
           </div>
         </div>
       </div>
