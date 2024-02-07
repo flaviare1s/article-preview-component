@@ -10,7 +10,7 @@ import pinterest from './assets/icon-pinterest.svg'
 export function App() {
 
   return (
-    <div>
+    <div className='bg-lightGrayishBlue font-Manrope'>
       <div>
         <div>
           <img src={ image } alt="Drawers picture" />
@@ -34,14 +34,14 @@ export function App() {
           </div>
           <p>Michelle Appleton</p>
           <p>28 Jun 2020</p>
-          <img src={ share } alt="" />
+          <img src={ share } alt="Share Icon" />
         </div>
         <div>
           <p>SHARE</p>
-          <img src={ facebook } alt="" />
-          <img src={ twitter } alt="" />
-          <img src={ pinterest } alt="" />
-          <img src={ share } alt="" />
+          <img src={ facebook } alt="Facebook Icon" />
+          <img src={ twitter } alt="Twitter Icon" />
+          <img src={ pinterest } alt="Pinterest Icon" />
+          <img src={ share } alt="Share Icon" />
         </div>
       </div>
 
