@@ -1,4 +1,4 @@
-import share from '../assets/icon-share.svg'
+import shareWhite from '../assets/icon-share-white.svg'
 import facebook from '../assets/icon-facebook.svg'
 import twitter from '../assets/icon-twitter.svg'
 import pinterest from '../assets/icon-pinterest.svg'
@@ -20,7 +20,7 @@ export const ShareComponent = ({ setShowShare, setShowAvatar }) => {
         <a href="#"><img src={ pinterest } alt="Pinterest Icon" /></a>
         </div>
         <div>
-            <button><img className='bg-desaturatedDarkBlue text-white p-2 rounded-full' src={ share } alt="Share Icon" /></button>
+            <button><img className='bg-desaturatedDarkBlue p-2 rounded-full' src={ shareWhite } alt="Share Icon" /></button>
         </div>
     </div>
   )
