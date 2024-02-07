@@ -31,7 +31,7 @@ export function App() {
             </p>
           </div>
           <div>
-            <div className='bg-white p-8 flex justify-between items-center'>
+            <div className='bg-white px-8 pt-4 pb-7 flex justify-between items-center'>
               <div className='flex justify-start items-center gap-5'>
                 <div>
                   <img className='w-10 h-10 rounded-full' src={ avatar } alt="Michelle Appleton" />
@@ -41,7 +41,7 @@ export function App() {
                   <p className='text-grayishBlue text-13 leading-5 tracking-normal'>28 Jun 2020</p>
                 </div>
               </div>
-              <div><img className='bg-lightGrayishBlue rounded-full text-center p-3' src={ share } alt="Share Icon" /></div>
+              <div><img className='bg-lightGrayishBlue rounded-full text-center p-2' src={ share } alt="Share Icon" /></div>
             </div>
             <div className='hidden flex'>
               <p>SHARE</p>
@@ -54,9 +54,9 @@ export function App() {
         </div>
       </div>
 
-      <div>
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-        Coded by <a href="#">Flávia Reis</a>.
+      <div className='text-xs'>
+        Challenge by <a className='text-blue-500' href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Coded by <a className='text-blue-500' href="https://github.com/flaviare1s/">Flávia Reis</a>.
       </div>
     </div>
   )
