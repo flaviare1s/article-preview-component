@@ -20,6 +20,9 @@ export default {
         '327': '327px',
         '730': '730px',
       },
+      fontSize: {
+        '13': '13px',
+      },
     },
   },
   plugins: [],
