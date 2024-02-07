@@ -23,6 +23,12 @@ export default {
       fontSize: {
         '13': '13px',
       },
+      letterSpacing: {
+        normal: '.0.12px',
+        wide: '.0.2px',
+        wider: '0.25px',
+        widest: '5px',
+      },
     },
   },
   plugins: [],
