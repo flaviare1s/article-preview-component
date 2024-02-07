@@ -18,8 +18,8 @@ export const AvatarComponent = ({setShowShare, showAvatar, setShowAvatar}) => {
             <p className='text-grayishBlue text-13 leading-5 tracking-normal'>28 Jun 2020</p>
         </div>
         </div>
-        <div onMouseEnter={handleMouseEnter}>
-            <button><img className='bg-lightGrayishBlue rounded-full text-center p-2' src={ share } alt="Share Icon" /></button>
+        <div>
+            <button onMouseEnter={handleMouseEnter}><img className='bg-lightGrayishBlue rounded-full text-center p-2' src={ share } alt="Share Icon" /></button>
         </div>
     </div>
   )

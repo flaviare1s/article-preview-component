@@ -14,7 +14,9 @@ export default {
         'Manrope': ['Manrope', 'sans-serif'],
       },
       spacing: {
+        '67': '67px',
         '200': '200px',
+        '248': '248px',
         '280': '280px',
         '285': '285px',
         '327': '327px',
