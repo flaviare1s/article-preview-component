@@ -20,24 +20,28 @@ export function App() {
       
         <div>
           <div className='bg-white'>
-            <h1 className='text-veryDarkGrayishBlue font-bold leading-6 px-8 pt-9 pb-4'>
+            <h1 className='text-veryDarkGrayishBlue font-bold leading-6 px-8 pt-9 pb-4 tracking-wide sm:text-xl sm:tracking-wider'>
               Shift the overall look and feel by adding these wonderful
               touches to furniture in your home
             </h1>
-            <p className='px-8 text-13 leading-5 text-grayishBlue'>
+            <p className='px-8 text-13 leading-5 text-desaturatedDarkBlue tracking-normal'>
               Ever been in a room and felt like something was missing? Perhaps
               it felt slightly bare and uninviting. I’ve got some simple tips
               to help you make any room feel complete.
             </p>
           </div>
           <div>
-            <div>
-              <div>
-                <img src={ avatar } alt="Michelle Appleton" />
+            <div className='bg-white p-8 flex justify-between items-center'>
+              <div className='flex justify-start items-center gap-5'>
+                <div>
+                  <img className='w-10 h-10 rounded-full' src={ avatar } alt="Michelle Appleton" />
+                </div>
+                <div>
+                  <p className='text-veryDarkGrayishBlue text-13 font-bold leading-5 tracking-normal'>Michelle Appleton</p>
+                  <p className='text-grayishBlue text-13 leading-5 tracking-normal'>28 Jun 2020</p>
+                </div>
               </div>
-              <p>Michelle Appleton</p>
-              <p>28 Jun 2020</p>
-              <img src={ share } alt="Share Icon" />
+              <div><img src={ share } alt="Share Icon" /></div>
             </div>
             <div>
               <p>SHARE</p>
