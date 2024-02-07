@@ -11,14 +11,14 @@ import pinterest from './assets/icon-pinterest.svg'
 export function App() {
 
   return (
-    <div className='bg-lightGrayishBlue font-Manrope min-h-full flex flex-col items-center justify-center m-auto'>
-      <div className='max-w-327 sm:flex sm:flex-row my-auto'>
-        <div>
-          <img className='sm:hidden w-screen' src={ image } alt="Drawers picture" />
-          <img className='hidden sm:block' src={ imageDesktop } alt="Drawers picture" />
+    <div className='bg-lightGrayishBlue font-Manrope min-h-screen flex flex-col items-center justify-center m-auto'>
+      <div className='h-full w-11/12 my-auto sm:w-730 sm:h-280 sm:grid sm:grid-cols-3 overflow-hidden'>
+        <div className='sm:col-span-1'>
+          <img className='sm:hidden max-w-full h-auto' src={ image } alt="Drawers picture" />
+          <img className='hidden sm:block sm:w-285 h-280' src={ imageDesktop } alt="Drawers picture" />
         </div>
-      
-        <div>
+        
+        <div className='sm:col-span-2 sm:h-280'>
           <div className='bg-white'>
             <h1 className='text-veryDarkGrayishBlue font-bold leading-6 px-8 pt-9 pb-4 tracking-wide sm:text-xl sm:tracking-wider'>
               Shift the overall look and feel by adding these wonderful
@@ -43,7 +43,7 @@ export function App() {
               </div>
               <div><img src={ share } alt="Share Icon" /></div>
             </div>
-            <div>
+            <div className='hidden flex'>
               <p>SHARE</p>
               <img src={ facebook } alt="Facebook Icon" />
               <img src={ twitter } alt="Twitter Icon" />
@@ -51,13 +51,13 @@ export function App() {
               <img src={ share } alt="Share Icon" />
             </div>
           </div>
-                </div>
         </div>
+      </div>
 
-        <div>
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-          Coded by <a href="#">Flávia Reis</a>.
-        </div>
+      <div>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Coded by <a href="#">Flávia Reis</a>.
+      </div>
     </div>
   )
 }
