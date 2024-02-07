@@ -4,10 +4,15 @@ import twitter from '../assets/icon-twitter.svg'
 import pinterest from '../assets/icon-pinterest.svg'
 
 
-export const ShareComponent = () => {
+export const ShareComponent = ({ setShowShare, setShowAvatar }) => {
+    const handleMouseLeave = () => {
+        setShowShare(false)
+        setShowAvatar(true)
+      }
+
     
   return (
-    <div className='flex justify-between items-center p-6 bg-veryDarkGrayishBlue text-white'>
+    <div  onMouseLeave={handleMouseLeave} className='flex justify-between items-center py-6 px-8 bg-veryDarkGrayishBlue'>
         <div className='flex justify-start items-center gap-3'>
         <p className='tracking-widest text-13 text-desaturatedDarkBlue'>SHARE</p>
         <a href="#"><img src={ facebook } alt="Facebook Icon" /></a>

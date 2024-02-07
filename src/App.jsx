@@ -32,7 +32,7 @@ export function App() {
           </div>
           <div>
             <AvatarComponent setShowShare={setShowShare} showAvatar={showAvatar} setShowAvatar={setShowAvatar}/>
-            {showShare && <ShareComponent/>}
+            {showShare && <ShareComponent setShowShare={setShowShare} setShowAvatar={setShowAvatar}/>}
           </div>
         </div>
       </div>
