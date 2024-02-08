@@ -3,15 +3,28 @@ import image from './assets/drawers.jpg'
 import imageDesktop from './assets/drawers-desktop.jpg'
 import { AvatarComponent } from './components/AvatarComponent'
 import { ShareComponent } from './components/ShareComponent'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export function App() {
   const [showShare, setShowShare] = useState(false)
   const [showAvatar, setShowAvatar] = useState(true)
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   return (
     <div className='bg-lightGrayishBlue font-Manrope min-h-screen flex flex-col items-center justify-center m-auto'>
-      <div className='h-full w-11/12 my-auto sm:w-full sm:max-w-2xl sm:h-280 sm:grid sm:grid-cols-3 rounded-lg shadow-lg'>
+      <div className={`h-full w-11/12 my-auto sm:w-full sm:max-w-2xl sm:h-280 sm:grid sm:grid-cols-3 rounded-lg shadow-lg ${isLargeScreen ? 'overflow-visible' : 'overflow-hidden'}`}>
         <div className='sm:col-span-1'>
           <img className='sm:hidden max-w-full h-auto rounded-t-lg' src={ image } alt="Drawers picture" />
           <img className='hidden sm:block sm:w-285 sm:h-280 sm:rounded-l-lg' src={ imageDesktop } alt="Drawers picture" />
