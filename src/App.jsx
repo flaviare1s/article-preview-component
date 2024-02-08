@@ -24,13 +24,13 @@ export function App() {
 
   return (
     <div className='bg-lightGrayishBlue font-Manrope min-h-screen flex flex-col items-center justify-center m-auto'>
-      <div className={`h-full w-11/12 my-auto sm:w-full sm:max-w-2xl sm:h-280 sm:grid sm:grid-cols-3 rounded-lg shadow-lg ${isLargeScreen ? 'overflow-visible' : 'overflow-hidden'}`}>
-        <div className='sm:col-span-1'>
+      <div className={`h-full w-11/12 my-auto sm:w-full sm:max-w-710 sm:h-280 sm:grid sm:grid-cols-10 rounded-lg shadow-lg ${isLargeScreen ? 'overflow-visible' : 'overflow-hidden'}`}>
+        <div className='sm:col-span-4 sm:w-285'>
           <img className='sm:hidden max-w-full h-auto rounded-t-lg' src={ image } alt="Drawers picture" />
-          <img className='hidden sm:block sm:w-285 sm:h-280 sm:rounded-l-lg' src={ imageDesktop } alt="Drawers picture" />
+          <img className='hidden sm:block sm:w-full sm:h-280 sm:rounded-l-lg' src={ imageDesktop } alt="Drawers picture" />
         </div>
         
-        <div className='sm:col-span-2 sm:h-280'>
+        <div className='sm:col-span-6 sm:h-280'>
           <div className='bg-white lg:rounded-tr-lg'>
             <h1 className='text-veryDarkGrayishBlue font-bold leading-6 px-8 pt-9 pb-4 tracking-wide sm:text-xl sm:tracking-wider'>
               Shift the overall look and feel by adding these wonderful
