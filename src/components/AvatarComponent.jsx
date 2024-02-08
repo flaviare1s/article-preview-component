@@ -8,7 +8,7 @@ export const AvatarComponent = ({setShowShare, showAvatar, setShowAvatar}) => {
       }
 
   return (
-    <div className={`bg-white px-8 pt-4 pb-7 flex justify-between items-center ${showAvatar ? '' : 'hidden'}`}>
+    <div className={`bg-white px-8 pt-4 pb-7 flex justify-between items-center lg:h-72 lg:rounded-r-lg ${showAvatar ? '' : 'hidden'}`}>
         <div className='flex justify-start items-center gap-5'>
         <div>
             <img className='w-10 h-10 rounded-full' src={ avatar } alt="Michelle Appleton" />
